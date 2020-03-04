@@ -59,7 +59,8 @@ function replaceTemplate(originalHtml, laptop) {
     output = output.replace(/{%CPU%}/g, laptop.cpu);
     output = output.replace(/{%STORAGE%}/g, laptop.storage);
     output = output.replace(/{%RAM%}/g, laptop.ram);
-    output = output.replace(/{%DESCRIPTION%}/g, laptop.description); 
+    output = output.replace(/{%DESCRIPTION%}/g, laptop.description);
+    output = output.replace(/{%ID%)/g, laptop.description);
     return output;
     
 }
